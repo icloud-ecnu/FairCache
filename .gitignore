@@ -1,0 +1,312 @@
+### ========== LMCache 规则 ========== ###
+# Python 编译文件
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Vim 临时文件
+**/.*.sw*
+
+# 二进制文件
+**/*.pt
+**/*.so
+**/*.pkl
+**/*.mo
+**/*.pot
+
+# Jupyter 临时文件
+**/.ipynb_checkpoints
+
+# 性能报告文件
+**/*.nsys-rep
+**/*.sqlite
+
+# 单元测试覆盖率报告
+**/.tox/
+**/.nox/
+**/.coverage
+**/.coverage.*
+**/.cache
+**/nosetests.xml
+**/coverage.xml
+**/*.cover
+**/.hypothesis/
+**/.pytest_cache/
+
+# 虚拟环境
+**/.env
+**/.venv
+**/env/
+**/venv/
+**/ENV/
+**/env.bak/
+**/venv.bak/
+
+# IDE 配置
+**/.idea/
+**/.vscode/
+**/.spyderproject
+**/.spyproject
+**/.ropeproject
+
+# 操作系统文件
+**/.DS_Store
+
+# 数据库文件
+**/db.sqlite3
+**/db.sqlite3-journal
+
+# 生成文件
+**/generated/
+
+# 构建产物 (精确到子项目)
+LMCache/build/
+LMCache/dist/
+LMCache/develop-eggs/
+LMCache/downloads/
+LMCache/eggs/
+LMCache/.eggs/
+LMCache/lib/
+LMCache/lib64/
+LMCache/parts/
+LMCache/sdist/
+LMCache/var/
+LMCache/wheels/
+LMCache/share/python-wheels/
+LMCache/*.egg-info/
+LMCache/.installed.cfg
+LMCache/*.egg
+LMCache/MANIFEST
+
+# PyInstaller 相关
+LMCache/*.manifest
+LMCache/*.spec
+
+# 安装日志
+LMCache/pip-log.txt
+LMCache/pip-delete-this-directory.txt
+
+# 测试报告与覆盖率
+LMCache/htmlcov/
+LMCache/.tox/
+LMCache/.nox/
+LMCache/.coverage
+LMCache/.coverage.*
+LMCache/.cache
+LMCache/nosetests.xml
+LMCache/coverage.xml
+LMCache/*.cover
+LMCache/*.py,cover
+LMCache/.hypothesis/
+LMCache/.pytest_cache/
+LMCache/cover/
+
+# Jupyter 临时文件
+**/.ipynb_checkpoints
+
+# Vim 临时文件
+**/.*.sw*
+
+# 其他
+LMCache/outdated/
+LMCache/perf-test.py
+LMCache/*.prof
+LMCache/*.so
+LMCache/.ycm_extra_conf.py
+
+# 实验性测试目录
+LMCache/lmcache/experimental/tests
+
+# 示例文件
+LMCache/examples/example_local.yaml
+LMCache/examples/openai_chat_completion_client_local.py
+LMCache/lmcache/experimental/examples
+
+# 示例输出
+**/offline_inference_outputs.jsonl
+LMCache/examples/offline_inference/offline_inference_outputs.jsonl
+LMCache/examples/save_decode_cache/offline_inference_outputs.jsonl
+LMCache/examples/offline_inference/buggy_example.py
+LMCache/examples/test_example/
+
+# 磁盘缓存
+LMCache/remote_disk/
+LMCache/local_disk/
+LMCache/tests/local_disk/
+LMCache/tests/remote_disk/
+**/*.pt  # 全局忽略所有PT文件
+
+# 脚本目录
+LMCache/misc_scripts/
+
+# 性能报告
+**/*.nsys-rep
+**/*.sqlite
+
+# 文档构建
+LMCache/docs/build/
+LMCache/docs/build.sh
+LMCache/docs/output/
+
+# 临时目录
+LMCache/try/
+
+# CUDA 内核文件
+LMCache/csrc/temp.cu
+
+### ========== 全局通用规则 ========== ###
+# Python 编译文件
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Vim 临时文件
+**/.*.sw*
+
+# PyTorch 模型文件
+**/*.pt
+
+# Jupyter 临时文件
+**/.ipynb_checkpoints
+
+# 性能报告文件
+**/*.nsys-rep
+**/*.sqlite
+
+
+
+
+### ========== lmcache-tests 规则 ========== ###
+lmcache-tests/temp_results/
+
+### ========== lmcache-vllm 规则 ========== ###
+# 构建产物（精确到子项目）
+lmcache-vllm/build/
+lmcache-vllm/dist/
+lmcache-vllm/develop-eggs/
+lmcache-vllm/downloads/
+lmcache-vllm/eggs/
+lmcache-vllm/.eggs/
+lmcache-vllm/lib/
+lmcache-vllm/lib64/
+lmcache-vllm/parts/
+lmcache-vllm/sdist/
+lmcache-vllm/var/
+lmcache-vllm/wheels/
+lmcache-vllm/share/python-wheels/
+lmcache-vllm/*.egg-info/
+lmcache-vllm/.installed.cfg
+lmcache-vllm/*.egg
+lmcache-vllm/MANIFEST
+
+# PyInstaller 相关
+lmcache-vllm/*.manifest
+lmcache-vllm/*.spec
+
+# 安装日志
+lmcache-vllm/pip-log.txt
+lmcache-vllm/pip-delete-this-directory.txt
+
+# 测试报告与覆盖率
+lmcache-vllm/htmlcov/
+lmcache-vllm/.tox/
+lmcache-vllm/.nox/
+lmcache-vllm/.coverage
+lmcache-vllm/.coverage.*
+lmcache-vllm/.cache/
+lmcache-vllm/nosetests.xml
+lmcache-vllm/coverage.xml
+lmcache-vllm/*.cover
+lmcache-vllm/*.py,cover
+lmcache-vllm/.hypothesis/
+lmcache-vllm/.pytest_cache/
+lmcache-vllm/cover/
+
+# 其他
+lmcache-vllm/outdated/
+lmcache-vllm/perf-test.py
+lmcache-vllm/*.prof
+
+### ========== vllm-0.6.2 规则 ========== ###
+# 版本文件
+vllm-0.6.2/vllm/_version.py
+
+# 编译组件
+vllm-0.6.2/vllm/vllm_flash_attn/
+
+# 构建产物
+vllm-0.6.2/build/
+vllm-0.6.2/cmake-build-*/
+vllm-0.6.2/develop-eggs/
+vllm-0.6.2/dist/
+vllm-0.6.2/downloads/
+vllm-0.6.2/eggs/
+vllm-0.6.2/.eggs/
+vllm-0.6.2/lib/
+vllm-0.6.2/lib64/
+vllm-0.6.2/parts/
+vllm-0.6.2/sdist/
+vllm-0.6.2/var/
+vllm-0.6.2/wheels/
+vllm-0.6.2/share/python-wheels/
+vllm-0.6.2/*.egg-info/
+vllm-0.6.2/.installed.cfg
+vllm-0.6.2/*.egg
+vllm-0.6.2/MANIFEST
+
+# CMake 配置
+vllm-0.6.2/CMakeUserPresets.json
+
+# PyInstaller
+vllm-0.6.2/*.manifest
+vllm-0.6.2/*.spec
+
+# 安装日志
+vllm-0.6.2/pip-log.txt
+vllm-0.6.2/pip-delete-this-directory.txt
+
+# Web 资源缓存
+vllm-0.6.2/.webassets-cache
+
+# 文档构建
+vllm-0.6.2/docs/_build/
+vllm-0.6.2/_build/
+vllm-0.6.2/site/
+
+# 框架特定文件
+vllm-0.6.2/local_settings.py
+vllm-0.6.2/.scrapy
+vllm-0.6.2/instance/
+vllm-0.6.2/.pybuilder/
+vllm-0.6.2/target/
+
+# Python 配置
+vllm-0.6.2/profile_default/
+vllm-0.6.2/ipython_config.py
+vllm-0.6.2/.pdm.toml
+vllm-0.6.2/__pypackages__/
+
+# 定时任务
+vllm-0.6.2/celerybeat-schedule
+vllm-0.6.2/celerybeat.pid
+
+# HIP 文件
+vllm-0.6.2/*.hip
+vllm-0.6.2/*_hip*
+vllm-0.6.2/hip_compat.h
+
+# 基准测试数据
+vllm-0.6.2/benchmarks/*.json
+
+# 类型检查
+vllm-0.6.2/.mypy_cache/
+vllm-0.6.2/.dmypy.json
+vllm-0.6.2/dmypy.json
+vllm-0.6.2/.pyre/
+vllm-0.6.2/.pytype/
+
+# Cython 调试
+vllm-0.6.2/cython_debug/
+
+datasets/lmcache-tests/run.log
+datasets/
